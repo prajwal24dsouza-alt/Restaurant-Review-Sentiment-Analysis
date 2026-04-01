@@ -1,86 +1,103 @@
-# Restaurant-Review-Sentiment-Analysis
-🍽️ Restaurant Review Sentiment Analysis
-📌 Project Overview
+# 🍽️ Restaurant Analytics Dashboard
 
-This project focuses on analyzing customer reviews of restaurants and determining whether the sentiment expressed is positive, negative, or neutral using Natural Language Processing (NLP) techniques.
+## 📊 Project Overview
+This project is an **end-to-end Restaurant Data Analysis & Visualization Dashboard** that explores insights from restaurant datasets using both:
 
-The goal is to help businesses understand customer feedback and improve their services based on insights derived from textual data.
+- 🐍 **Python (Data Analysis + Visualization)**
+- 🌐 **Web Dashboard (Interactive UI with Chart.js & Vite)**
 
-🚀 Features
-✅ Text preprocessing (cleaning, tokenization, stopword removal)
-✅ Feature extraction using techniques like:
-Bag of Words (BoW)
-TF-IDF
-✅ Sentiment classification using Machine Learning models
-✅ Accuracy evaluation and performance metrics
-✅ Easy-to-test custom input reviews
-🛠️ Technologies Used
-Python 🐍
-NumPy
-Pandas
-Scikit-learn
-NLTK / SpaCy
-Matplotlib / Seaborn (for visualization)
-📂 Project Structure
-Restaurant-Review-Sentiment-Analysis/
-│── dataset/
-│   └── restaurant_reviews.csv
-│── notebooks/
-│   └── analysis.ipynb
-│── src/
-│   ├── preprocessing.py
-│   ├── model.py
-│   └── utils.py
-│── requirements.txt
-│── README.md
-📊 Dataset
-Contains restaurant reviews along with sentiment labels
-Example:
-"The food was amazing!" → Positive 😊
-"Service was terrible." → Negative 😡
-⚙️ Installation
-# Clone the repository
-git clone https://github.com/your-username/Restaurant-Review-Sentiment-Analysis.git
+It analyzes restaurant data such as **ratings, cuisines, cost, and city distribution** to generate meaningful business insights.
 
-# Navigate to project folder
-cd Restaurant-Review-Sentiment-Analysis
+---
 
-# Install dependencies
-pip install -r requirements.txt
-▶️ Usage
-# Run the notebook
-jupyter notebook
+## 🖼️ Dashboard Preview
+![Dashboard](restaurant_dashboard.png)
 
-OR
+---
 
-# Run Python script
-python src/model.py
-📈 Model Workflow
-Load dataset
-Clean and preprocess text
-Convert text to numerical features
-Train model (e.g., Logistic Regression / Naive Bayes)
-Evaluate performance
-Predict sentiment on new reviews
-📌 Example
-review = "The food was delicious and service was great!"
-prediction = model.predict([review])
-print(prediction)  # Output: Positive
-📉 Evaluation Metrics
-Accuracy
-Precision
-Recall
-F1-score
-Confusion Matrix
-💡 Future Improvements
-Use Deep Learning models (LSTM, BERT)
-Deploy as a web application
-Real-time sentiment analysis
-Multilingual support
-🤝 Contributing
+## 🚀 Key Features
 
-Contributions are welcome! Feel free to fork this repository and submit a pull request.
+### 📌 Data Analysis (Python)
+- Data cleaning (duplicates & missing values handling)
+- Statistical summary (min, max, average)
+- Visualization dashboard with:
+  - Rating distribution (Histogram)
+  - Top cuisines (Bar chart)
+  - Cost vs Rating (Scatter plot)
+  - Top cities (Bar chart)
 
-📜 License
+---
 
-This project is licensed under the MIT License.
+### 🌐 Interactive Web Dashboard
+- KPI Cards (Total Restaurants, Avg Rating, Avg Cost, Top City, Top Cuisine)
+- Filters:
+  - City
+  - Cuisine
+  - Rating range
+  - Cost range
+- Charts:
+  - Ratings distribution
+  - Cuisine analysis
+  - Cost vs Rating
+  - City-wise restaurants
+- Searchable & sortable data table
+- Pagination support
+
+---
+
+### 🧪 Dataset Generation
+- Generates **10,000 synthetic restaurant records**
+- Includes:
+  - City
+  - Cuisine
+  - Rating
+  - Cost
+  - Votes
+
+---
+
+## 🛠️ Technologies Used
+
+### 🔹 Python Stack
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+### 🔹 Frontend Stack
+- HTML, CSS, JavaScript
+- Chart.js
+- Vite
+
+---
+
+## 📂 Project Structure
+Restaurant-Analytics-Dashboard/
+│── restaurant_analysis.py
+│── generate_dummy_data.py
+│── restaurant_data.csv
+│── restaurant_dashboard.png
+│
+├── web/
+│ ├── index.html
+│ ├── src/
+│ │ ├── main.js
+│ │ ├── style.css
+│
+├── package.json
+├── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 🔹 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/restaurant-analytics-dashboard.git
+cd restaurant-analytics-dashboard
+
+# 📈 Insights You Can Get
+⭐ Most restaurants have ratings between 3.5 – 4.5
+🍜 Popular cuisines include French, Korean, Indian
+💰 Cost does not strongly correlate with rating
+🌆 Cities like New York & San Jose have highest restaurant counts
