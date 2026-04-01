@@ -95,9 +95,6 @@ Restaurant-Analytics-Dashboard/
 ```bash
 git clone https://github.com/your-username/restaurant-analytics-dashboard.git
 cd restaurant-analytics-dashboard
+---
 
-# 📈 Insights You Can Get
-⭐ Most restaurants have ratings between 3.5 – 4.5
-🍜 Popular cuisines include French, Korean, Indian
-💰 Cost does not strongly correlate with rating
-🌆 Cities like New York & San Jose have highest restaurant counts
+
